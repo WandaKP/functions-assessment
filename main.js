@@ -12,13 +12,13 @@ function divisibleByTwo (x) {
     console.log(x)
 }
 
-function largestNum(number) {
-    const largest = [0];
+function largestNum(arr) {
+    let largest = [];
 for (let i = 0; i < number.length; i++) {
-    if (largest < number[i]) {
-        largest = number[i];
+    if (largest > arr[i]) {
+        largest = arr[i];
     }
-return number
+return largest
 }
 }
 
